@@ -170,6 +170,7 @@ body {
   left: 27%;
   border-radius: 50px 0 0 50px;
   transform: rotate(-10deg);
+  z-index: 1;
 }
 .cheeks::before {
   content: "";
@@ -181,4 +182,32 @@ body {
   border-radius: 0 50px 50px 0;
   transform-origin: top left;
   transform: rotate(20deg);
+}
+.nose {
+  position: absolute;
+  width: 56px;
+  height: 42px;
+  background-color: #3c2114;
+  top: 42%;
+  left: 42%;
+  border-radius: 100% 100% 40% 40%;
+  z-index: 2;
+}
+.teeth {
+  position: absolute;
+  width: 44px;
+  height: 40px;
+  background-color: #fff;
+  top: 53%;
+  left: 44%;
+  border-radius: 5px;
+}
+.teeth::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: #a35a37;
+  left: 50%;
+  transform: translateX(-50%);
 }
